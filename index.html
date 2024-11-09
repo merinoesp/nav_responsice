@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800;678&family=Fjalla+One&family=Koulen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Michroma&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="n_container">
+        <div class="logo">
+            <img src="https://placehold.co/70x70" alt="">
+        </div>
+        <div class="a_sect">
+            <a href="">SECTION</a>
+            <a href="">SECTION</a>
+            <a href="">SECTION</a>
+            <a href="">SECTION</a>
+            <a href="">SECTION</a>
+            <a href="">SECTION</a>
+        </div>
+    </div>
+    <div class="m_view">
+        <div class="l_mobile">
+            <img src="https://placehold.co/60x60" alt="">
+        </div>
+        <div class="sect_list">
+            <button id="toog" class="toog_menu"><img src="menu.png" alt=""></button>
+            <ul id="list_nav" class="hidden">
+                <li><a href="#">SECTION 1</a></li>
+                <li><a href="#">SECTION 2</a></li>
+                <li><a href="#">SECTION 3</a></li>
+                <li><a href="#">SECTION 4</a></li>
+                <li><a href="#">SECTION 5</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="cont">
+        <div class="img">
+            <img src="menu.png" alt="">
+        </div>
+    </div>
+    <script>
+        document.getElementById("toog").addEventListener('click', function () {
+            const list = document.getElementById('list_nav');
+            list.classList.toggle("hidden");
+            const hidd = document.getElementById('toog').style.display = "none";
+        });
+        document.getElementById("cont").addEventListener('click', function(){
+            const out = document.getElementById('list_nav');
+            out.classList.toggle("hidden");
+            const hidd = document.getElementById('toog').style.display = "block";
+        });
+       
+
+    //    voy a colocar para que el boton se oculte
+
+       
+
+
+            
+
+        
+    </script>
+</body>
+
+</html>

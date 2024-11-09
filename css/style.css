@@ -1,0 +1,91 @@
+body {
+    font-family: "Koulen", sans-serif;
+    background-color: #16423C;
+    margin: 0;
+}
+
+.n_container {
+    background-color: #6A9C89;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5%;
+    border-bottom: 5px solid black;
+    box-shadow: #C4DAD2 0px 16px 56px;
+}
+
+.a_sect {
+    width: 100%;
+    text-align: center;
+}
+
+.a_sect a {
+    color: #C4DAD2;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.m_view {
+    display: none;
+}
+.img{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    /* Oculta la barra de navegación completa en pantallas pequeñas */
+    .n_container {
+        display: none;
+    }
+
+    /* Estilos para la vista móvil */
+    .m_view {
+        display: flex;
+        padding: 1%;
+        justify-content: space-between; /* Espacia los elementos de .m_view */
+        background-color: #6A9C89;
+        align-items: center;
+    }
+
+    .sect_list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    
+        padding: 1%;
+        justify-content: center;
+    }
+
+    .hidden {
+        display: none;
+        
+    }
+
+    /* Estilos para el botón toog_menu en la vista móvil */
+    .toog_menu {
+        margin-left: auto; /* Empuja el botón a la derecha */
+        
+        cursor: pointer;
+    }
+    .toog_menu img{
+     width: 40px;
+     border-radius: 10px;
+     height: 40px;
+    }
+    .list_nav li, a{
+     text-decoration: none;
+     color: white;
+     font-size: 15px;
+    }
+    .list_nav li{
+        list-style-type: none;
+        
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+    }
+    .img{
+        
+    }
+}
